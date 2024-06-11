@@ -39,11 +39,11 @@ IL, IS, RS, RP = params
 #Plotagem dos dados
 plt.scatter(V, I, color = 'black', label = 'dados experimentais')
 
-#Plotagem da curva de tendencia
+#Plotagem da curva de tendência
 V = np.linspace(0.0,max(V),100)
 plt.plot(V, f(V, IL, IS, RS, RP), color="blue", label = 'Curva ajustada')
 
-#Ttulos e legendas
+#Títulos e legendas
 plt.legend(loc='best')
 
 plt.xlabel('V(mV)', size = 10)
